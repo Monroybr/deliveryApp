@@ -343,7 +343,7 @@ template {
 }
 
 .bg-primario {
-  background-color: #e8505b;
+  background-color: #F02D64;
 }
 
 /** Media Queries **/
@@ -438,7 +438,7 @@ h3 {
   color: #000;
 }
 .navegacion__link--registrar {
-  background-color: #e8505b;
+  background-color: #F02D64;
   font-size: 2rem;
   padding: 1.2rem 3rem;
   border-radius: 1rem;
@@ -453,7 +453,7 @@ h3 {
 }
 .navegacion__link--registrar:hover {
   cursor: pointer;
-  background-color: #e22331;
+  background-color: #da1049;
 }
 @media (min-width: 768px) {
   .navegacion__link--registrar {
@@ -469,11 +469,12 @@ h3 {
   }
 }
 .formulario__contenido {
-  background-color: #e8505b;
+  background-color: #F02D64;
   padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  border-radius: 2rem;
 }
 .formulario__heading {
   color: #FFFFFF;
