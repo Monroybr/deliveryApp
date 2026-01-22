@@ -553,9 +553,6 @@ h3 {
 .pasos__contenido {
   background-color: #F02D64;
 }
-.pasos__contenido:hover {
-  border-right: 1rem solid #000;
-}
 .pasos__heading {
   color: #FFFFFF;
   text-align: center;
