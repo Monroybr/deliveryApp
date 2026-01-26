@@ -489,47 +489,6 @@ h3 {
 .formulario__campo {
   margin-bottom: 1rem;
 }
-.formulario__label {
-  display: block;
-  color: #FFFFFF;
-  width: 100%;
-  text-transform: uppercase;
-  margin: 1rem 0;
-}
-.formulario__input {
-  width: 100%;
-  padding: 1.5rem;
-  border: none;
-}
-.formulario__submit {
-  margin-top: 2rem;
-  background-color: #455a64;
-  font-size: 2rem;
-  padding: 1.2rem 3rem;
-  border-radius: 1rem;
-  font-weight: 700;
-  display: block;
-  width: 100%;
-  text-align: center;
-  color: #FFFFFF;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  border: none;
-}
-.formulario__submit:hover {
-  cursor: pointer;
-  background-color: #303f46;
-}
-@media (min-width: 768px) {
-  .formulario__submit {
-    width: auto;
-  }
-}
-@media (min-width: 768px) {
-  .formulario__submit {
-    width: 100%;
-  }
-}
 .formulario__imagen--contenedor {
   margin-top: 5rem;
   display: flex;
@@ -909,5 +868,77 @@ h3 {
   margin: 0;
   font-weight: 700;
   padding: 2rem;
+}
+
+.sesion {
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.sesion__contenido {
+  background-color: #F02D64;
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .sesion__contenido {
+    width: 50%;
+  }
+}
+.sesion__heading {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .sesion__heading {
+    font-size: 4rem;
+  }
+}
+.sesion__campo {
+  margin-bottom: 0;
+}
+.sesion__label {
+  display: block;
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.sesion__input {
+  width: 100%;
+  align-items: center;
+  padding: 1.5rem;
+  border: none;
+}
+.sesion__submit {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: #455a64;
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+.sesion__submit:hover {
+  cursor: pointer;
+  background-color: #303f46;
+}
+@media (min-width: 768px) {
+  .sesion__submit {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .sesion__submit {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=app.css.map */

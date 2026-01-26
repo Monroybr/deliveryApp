@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Delivery-Inisiar Sesión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/build/css/app.css">
+</head>
+<body>
+    <!--Seccion header-->
+    <header class="header contenedor">
+        <div class="header__logo">
+            <img src="build/img/logo.svg" alt="logo deluveryApp">
+        </div>
+
+        <nav class="navegacion">
+            <a href="index.html" class="navegacion__link">Inicio</a>
+            <a href="iniciar_sesion.html" class="navegacion__link">Iniciar Sesión</a>
+            <a href="crear_cuenta.html" class="navegacion__link">Crear Cuenta</a>
+            <a href="registrar_restaurante.html" class="navegacion__link navegacion__link--registrar">Registrar Restaurante</a>
+        </nav>
+    </header>
+    <!--Seccion formulario-->
+    <section class="sesion contenedor">
+        <div class="sesion__contenido">
+           <h2 class="sesion__heading">Ingresa con tu usuario y contraseña</h2>
+               <form class="sesion__buscar">
+                    <div class="sesion__campo">
+                        <label for="usuario" class="sesion__label">Usuario</label>
+                        <input id="usuario" class="sesion__input" placeholder="mariat@gmail.com">
+                    </div> <!--Fin usuario-->
+
+                    <div class="sesion__campo">
+                        <label for="contraseña" class="sesion__label">Contraseña</label>
+                        <input id="contraseña" class="sesion__input" placeholder="******">
+                    </div> <!--Fin contraseña-->
+
+                    <input type="submit" class="sesion__submit" value="Iniciar Sesión">
+                </form>
+        </div>
+        
+    </section>
+
+
+    <!--Seccion footer-->
+    <footer class="footer">
+        <div class="footer__grid contenedor">
+            <div class="footer__widget">
+                <h3 class="footer__heading">Nosotros</h3>
+                <p class="footer__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita exercitationem perferendis corporis.
+                Est quod iste praesentium, reiciendis ducimus quam ullam asperiores ab temporibus hic, voluptas dolore quia. 
+                Molestias, eius corporis!</p>
+            </div> <!--Fin nosotros-->
+            <div class="footer__widget">
+                <h3 class="footer__heading">Navegación</h3>
+                <nav class="footer__nav">
+                    <a class="footer__link" href="#">Enlace 1</a>
+                    <a class="footer__link" href="#">Enlace 2</a>
+                    <a class="footer__link" href="#">Enlace 3</a>
+                    <a class="footer__link" href="#">Enlace 4</a>
+                    <a class="footer__link" href="#">Enlace 5</a>
+                    <a class="footer__link" href="#">Enlace 6</a>
+                </nav>
+            </div> <!--Fin navegacion-->
+
+            <div class="footer__widget">
+                <h3 class="footer__heading">Contacto</h3>
+                <p class="footer__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita exercitationem perferendis corporis.
+                Est quod iste praesentium, reiciendis ducimus quam ullam asperiores ab temporibus hic, voluptas dolore quia. 
+                Molestias, eius corporis!</p>
+            </div> <!--Fin contacto-->
+        </div>
+
+        <p class="footer__copyright">App Comida. Todos los derechos Reservados - 2026 - LM</p>
+    </footer>
+</body>
+</html>
