@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Delivery-Crear Cuenta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/build/css/app.css">
+</head>
+<body>
+    <!--Seccion header-->
+    <header class="header contenedor">
+        <div class="header__logo">
+            <img src="build/img/logo.svg" alt="logo deluveryApp">
+        </div>
+
+        <nav class="navegacion">
+            <a href="index.html" class="navegacion__link">Inicio</a>
+            <a href="iniciar_sesion.html" class="navegacion__link">Iniciar Sesión</a>
+            <a href="crear_cuenta.html" class="navegacion__link">Crear Cuenta</a>
+            <a href="#" class="navegacion__link navegacion__link--registrar">Registrar Restaurante</a>
+        </nav>
+    </header>
+    <!--Seccion -->
+    <main class="registro contenedor"> 
+        <h2 class="registro__titulo">Crea tu cuenta</h2>
+
+        <form class="registro__formulario">
+            <div class="resgistro__campos">
+                <label class="registro__texto" for="nombre">Nombre: </label>
+                <input class="registro__datos" type="text" id="nombre" placeholder="Ej: Maria Tores" required maxlength="50">
+            </div>
+
+            <div class="resgistro__campos">
+                <label class="registro__texto" for="email">Email: </label>
+                <input class="registro__datos" type="email" id="email" placeholder="Ej: maria@gmail.com" required>
+            </div>
+
+            <div class="resgistro__campos">
+                <label class="registro__texto" for="fecha">Fecha de Nacimiento: </label>
+                <input class="registro__datos" type="date" id="fecha" required >
+            </div>
+
+            <div class="resgistro__campos">
+                <label class="registro__texto" for="password" >Contraseña</label>
+                <input class="registro__datos" type="password"  required minlength="8" placeholder="Minimo 8 caracteres">
+            </div> <!--Fin contraseña-->
+
+            <div class="resgistro__campos">
+                <label class="registro__texto" for="password" >Confirmar contraseña</label>
+                <input class="registro__datos" type="password"  required required minlength="8" placeholder="Minimo 8 caracteres">
+            </div> <!--Fin contraseña-->
+
+            <div class="resgistro__campos">
+                <input class="formulario__submit" type="submit" value="Crear cuenta">
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <!--Seccion footer-->
+    <footer class="footer">
+        <div class="footer__grid contenedor">
+            <div class="footer__widget">
+                <h3 class="footer__heading">Nosotros</h3>
+                <p class="footer__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita exercitationem perferendis corporis.
+                Est quod iste praesentium, reiciendis ducimus quam ullam asperiores ab temporibus hic, voluptas dolore quia. 
+                Molestias, eius corporis!</p>
+            </div> <!--Fin nosotros-->
+            <div class="footer__widget">
+                <h3 class="footer__heading">Navegación</h3>
+                <nav class="footer__nav">
+                    <a class="footer__link" href="#">Enlace 1</a>
+                    <a class="footer__link" href="#">Enlace 2</a>
+                    <a class="footer__link" href="#">Enlace 3</a>
+                    <a class="footer__link" href="#">Enlace 4</a>
+                    <a class="footer__link" href="#">Enlace 5</a>
+                    <a class="footer__link" href="#">Enlace 6</a>
+                </nav>
+            </div> <!--Fin navegacion-->
+
+            <div class="footer__widget">
+                <h3 class="footer__heading">Contacto</h3>
+                <p class="footer__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita exercitationem perferendis corporis.
+                Est quod iste praesentium, reiciendis ducimus quam ullam asperiores ab temporibus hic, voluptas dolore quia. 
+                Molestias, eius corporis!</p>
+            </div> <!--Fin contacto-->
+        </div>
+
+        <p class="footer__copyright">App Comida. Todos los derechos Reservados - 2026 - LM</p>
+    </footer>
+    <button class="btn-scroll-top" id="btnScrollTop" title="Subir al inicio">⬆</button>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const btn = document.getElementById("btnScrollTop");
+
+            // Cuando bajamos un poco muestra el botón
+            window.addEventListener("scroll", () => {
+            if (window.scrollY > window.innerHeight / 2) {
+                btn.classList.add("active");
+            } else {
+                btn.classList.remove("active");
+            }
+            });
+
+            // Al hacer clic sube hasta la barra
+            btn.addEventListener("click", () => {
+            const navbar = document.querySelector("nav"); // tu nav principal
+            if (navbar) {
+                navbar.scrollIntoView({ behavior: "smooth" });
+            } else {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+            });
+        });
+    </script>
+</body>
+</html>

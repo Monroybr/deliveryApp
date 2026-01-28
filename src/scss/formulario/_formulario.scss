@@ -28,7 +28,33 @@
 
     &__campo{
         margin-bottom: 1rem;
+    }
 
+    &__label{
+        display: block;
+        color: v.$blanco;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 1rem 0;
+    }
+
+    &__input{
+        width:100%;
+        align-items: center;
+        padding: 1.5rem;
+        border: none;
+        
+    }
+
+    &__submit{
+        margin-top: 2rem;
+        width: 100%;
+        @include m.boton(v.$secundario, v.$blanco);
+        @include m.tablet{ 
+            width: 100%;
+
+        }
     }
    
 
@@ -42,6 +68,6 @@
         width: 30rem;
         @include m.desktop { 
             width: 100%;
-         }
+        }
     }
 }

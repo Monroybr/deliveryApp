@@ -21,23 +21,30 @@
             <a href="index.html" class="navegacion__link">Inicio</a>
             <a href="iniciar_sesion.html" class="navegacion__link">Iniciar Sesión</a>
             <a href="crear_cuenta.html" class="navegacion__link">Crear Cuenta</a>
-            <a href="registrar_restaurante.html" class="navegacion__link navegacion__link--registrar">Registrar Restaurante</a>
+            <a href="#" class="navegacion__link navegacion__link--registrar">Registrar Restaurante</a>
         </nav>
     </header>
     <!--Seccion formulario-->
     <section class="sesion contenedor">
-        <div class="sesion__contenido">
-           <h2 class="sesion__heading">Ingresa con tu usuario y contraseña</h2>
-               <form class="sesion__buscar">
-                    <div class="sesion__campo">
-                        <label for="usuario" class="sesion__label">Usuario</label>
-                        <input id="usuario" class="sesion__input" placeholder="mariat@gmail.com">
+        <div class="sesion__contenedor">
+           <h2 class="sesion__titulo">Ingresa con tu usuario y contraseña</h2>
+               <form class="sesion__busca">
+                    <div class="sesion__campos">
+                        <label for="email" class="sesion__label">Usuario</label>
+                        <input type="email" class="sesion__input" placeholder="mariat@gmail.com" required>
                     </div> <!--Fin usuario-->
 
-                    <div class="sesion__campo">
-                        <label for="contraseña" class="sesion__label">Contraseña</label>
-                        <input id="contraseña" class="sesion__input" placeholder="******">
+                    <div class="sesion__campos">
+                        <label for="password" class="sesion__label">Contraseña</label>
+                        <input type="password" class="sesion__input" placeholder="******" required>
                     </div> <!--Fin contraseña-->
+
+                    <div class="sesion__opciones">
+                        <label>
+                            <input class="sesion__checkbox" type="checkbox"> Recordar
+                        </label>
+                        <a class="sesion__olvidar" href="#">Forgot Password?</a>
+                    </div>
 
                     <input type="submit" class="sesion__submit" value="Iniciar Sesión">
                 </form>
@@ -77,5 +84,30 @@
 
         <p class="footer__copyright">App Comida. Todos los derechos Reservados - 2026 - LM</p>
     </footer>
+   <button class="btn-scroll-top" id="btnScrollTop" title="Subir al inicio">⬆</button>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const btn = document.getElementById("btnScrollTop");
+
+            // Cuando bajamos un poco muestra el botón
+            window.addEventListener("scroll", () => {
+            if (window.scrollY > window.innerHeight / 2) {
+                btn.classList.add("active");
+            } else {
+                btn.classList.remove("active");
+            }
+            });
+
+            // Al hacer clic sube hasta la barra
+            btn.addEventListener("click", () => {
+            const navbar = document.querySelector("nav"); // tu nav principal
+            if (navbar) {
+                navbar.scrollIntoView({ behavior: "smooth" });
+            } else {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+            });
+        });
+    </script>
 </body>
 </html>

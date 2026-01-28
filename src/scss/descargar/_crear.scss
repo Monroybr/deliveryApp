@@ -1,0 +1,50 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.registro{
+    padding: 5rem;
+    @include m.desktop { 
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    &__titulo{
+        text-align: center;
+        text-transform: uppercase;
+        @include m.desktop { 
+            padding-right: 10rem;
+            padding-top: 20rem;
+        }
+    }
+
+
+    &__formulario{
+        @include m.desktop { 
+            width:50%;
+        }
+    }
+
+    &__texto{
+        font-size: 2rem;
+        text-transform: uppercase;
+        @include m.tablet { 
+            font-size: 2.5rem;
+        }
+    }
+    &__datos{
+        width: 100%;
+        padding: 1rem;
+        border: .5rem solid v.$primario;
+        margin-bottom:2rem;
+        
+    }
+
+    &__boton{
+        padding:5rem;
+        
+    }
+
+
+    
+}

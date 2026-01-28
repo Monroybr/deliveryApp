@@ -397,6 +397,31 @@ h3 {
   font-size: 3.2rem;
 }
 
+.btn-scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #2e2e2e;
+  color: #FFFFFF;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.btn-scroll-top:hover {
+  background-color: #F02D64;
+}
+.btn-scroll-top.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -488,6 +513,50 @@ h3 {
 }
 .formulario__campo {
   margin-bottom: 1rem;
+}
+.formulario__label {
+  display: block;
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+.formulario__input {
+  width: 100%;
+  align-items: center;
+  padding: 1.5rem;
+  border: none;
+}
+.formulario__submit {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: #455a64;
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+.formulario__submit:hover {
+  cursor: pointer;
+  background-color: #303f46;
+}
+@media (min-width: 768px) {
+  .formulario__submit {
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .formulario__submit {
+    width: 100%;
+  }
 }
 .formulario__imagen--contenedor {
   margin-top: 5rem;
@@ -816,6 +885,49 @@ h3 {
           transform: scale(1.2);
 }
 
+.registro {
+  padding: 5rem;
+}
+@media (min-width: 1024px) {
+  .registro {
+    display: flex;
+    justify-content: center;
+  }
+}
+.registro__titulo {
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 1024px) {
+  .registro__titulo {
+    padding-right: 10rem;
+    padding-top: 20rem;
+  }
+}
+@media (min-width: 1024px) {
+  .registro__formulario {
+    width: 50%;
+  }
+}
+.registro__texto {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .registro__texto {
+    font-size: 2.5rem;
+  }
+}
+.registro__datos {
+  width: 100%;
+  padding: 1rem;
+  border: 0.5rem solid #F02D64;
+  margin-bottom: 2rem;
+}
+.registro__boton {
+  padding: 5rem;
+}
+
 .footer {
   background-color: #455a64;
   padding-top: 5rem;
@@ -875,26 +987,27 @@ h3 {
   display: flex;
   justify-content: center;
 }
-.sesion__contenido {
+.sesion__contenedor {
   background-color: #F02D64;
   padding: 5rem;
+  border-radius: 2rem;
 }
-@media (min-width: 768px) {
-  .sesion__contenido {
+@media (min-width: 1024px) {
+  .sesion__contenedor {
     width: 50%;
   }
 }
-.sesion__heading {
+.sesion__titulo {
   color: #FFFFFF;
   text-align: center;
   font-size: 2rem;
 }
 @media (min-width: 768px) {
-  .sesion__heading {
+  .sesion__titulo {
     font-size: 4rem;
   }
 }
-.sesion__campo {
+.sesion__campos {
   margin-bottom: 0;
 }
 .sesion__label {
@@ -904,6 +1017,7 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   margin: 1rem 0;
+  font-size: 2.5rem;
 }
 .sesion__input {
   width: 100%;
@@ -940,5 +1054,19 @@ h3 {
   .sesion__submit {
     width: 100%;
   }
+}
+.sesion__opciones {
+  padding: 2rem;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .sesion__opciones {
+    font-size: 2rem;
+  }
+}
+.sesion__olvidar {
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=app.css.map */
